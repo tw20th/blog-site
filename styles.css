@@ -1,52 +1,54 @@
-/* ベーシックなリセット */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* フォント設定 */
+/* ページ全体の背景グラデーション */
 body {
     font-family: 'Noto Sans JP', sans-serif;
     line-height: 1.6;
-    background-color: #ffffff;
+    background: linear-gradient(to bottom right, #d4f4dd, #ffffff); /* 左上から薄緑のグラデーション */
     color: #333333;
+    margin: 0;
+    padding: 0;
 }
 
 /* ヘッダーのスタイル */
 header {
-    background-color: #3498db; /* メインカラー */
-    color: #ffffff;
-    padding: 1rem;
+    background-color: #5B811E; /* ヘッダーのカラー */
+    color: #ffffff; /* テキストを白に */
+    padding: 16px; /* 8の倍数のパディング */
     text-align: center;
 }
 
+/* ナビゲーションメニューのスタイル */
 nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 16px; /* 8の倍数の間隔 */
+    background-color: #779D3C; /* メニューバーのカラー */
+    padding: 8px; /* 8の倍数のパディング */
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #ffffff; /* メニュー項目のテキストカラー */
     text-decoration: none;
+    padding: 8px 16px; /* 8の倍数のスペーシング */
 }
 
 /* メインコンテンツのスタイル */
 main {
     max-width: 800px;
-    margin: 2rem auto;
-    padding: 1rem;
+    margin: 32px auto; /* 8の倍数のマージン */
+    padding: 16px; /* 8の倍数のパディング */
+    background-color: #ffffff; /* メインカラー */
+    border-radius: 8px; /* 8の倍数の角丸 */
 }
 
+/* 記事のスタイル */
 article {
     border-bottom: 1px solid #ccc;
-    padding: 1rem 0;
+    padding: 16px 0; /* 8の倍数のスペーシング */
 }
 
 h3 a {
-    color: #3498db;
+    color: #779D3C; /* 見出しのリンクカラー */
     text-decoration: none;
 }
 
@@ -56,9 +58,9 @@ h3 a:hover {
 
 /* フッターのスタイル */
 footer {
-    background-color: #333333;
-    color: #ffffff;
+    background-color: #5B811E; /* フッターのカラー */
+    color: #ffffff; /* テキストを白に */
     text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
+    padding: 16px; /* 8の倍数のパディング */
+    margin-top: 32px; /* 8の倍数のマージン */
 }
